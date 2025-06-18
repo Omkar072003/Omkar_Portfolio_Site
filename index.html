@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/omkar.gif" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omkar Nawale</title>
+  </head> 
+  <body class="light-theme">
+    <div class="experience">
+      <canvas class="experience-canvas"></canvas>
+    </div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="preloader-wrapper">
+        <div class="items">    
+          <div class="logo">
+            <img id="logo" src="./omkar.gif" alt="">
+          </div>
+          <div class="loading">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="facts">
+            <h5 id="fact-title"></h5>
+            <p id="fact"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page" asscroll-container>
+      <div class="toggle-bar">
+        <label class="theme-switch">
+          <input type="checkbox" name="checkbox" class="theme-switch__checkbox">
+          <div class="theme-switch__container">
+            <div class="theme-switch__clouds"></div>
+            <div class="theme-switch__stars-container">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z" fill="currentColor"></path>
+              </svg>
+            </div>
+            <div class="theme-switch__circle-container">
+              <div class="theme-switch__sun-moon-container">
+                <div class="theme-switch__moon">
+                  <div class="theme-switch__spot"></div>
+                  <div class="theme-switch__spot"></div>
+                  <div class="theme-switch__spot"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </label>
+      </div>
+
+      <div class="page-wrapper" asscroll>
+        <section class="hero">
+          <div class="hero-wrapper">
+            <!--Intro-->
+            <div class="intro-text">Welcome to My Portfolio!</div>
+            <div class="arrow-svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path fill="currentColor" d="M480-362q-8 0-15-2.5t-13-8.5L268-557q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-373q-6 6-13 8.5t-15 2.5Z"/></svg></div>
+            <div class="hero-main">
+              <h1 class="hero-main-title">Omkar Nawale</h1>
+              <p class="hero-main-description">Web Developer</p>
+            </div>
+            <div class="hero-second">
+              <p class="hero-second-subheading first-sub">Omkar Nawale's</p>
+              <p class="hero-second-description second-sub">Portfolio</p>
+            </div>
+          </div>
+        </section>
+        <div class="first-move section-margin"></div>
+
+        <section class="first-section section left">
+          <div class="progress-wrapper progress-bar-wrapper-left">
+            <div class="progress-bar"></div>
+          </div>
+          <div class="section-intro-wrapper">
+            <h1 class="section-title">
+              <span class="section-title-text">About Me!</span>
+              <div class="section-title-decoration styleOne"></div>
+              <div class="section-title-decoration styleTwo"></div>
+              <div class="section-title-decoration styleThree"></div>
+            </h1>
+            <span class="section-number">01</span>
+          </div>
+
+          <div class="section-detail-wrapper">
+            <h3 class="section-heading">Welcome to my Room!</h3>
+            <p class="section-text">As you enter the room, you’ll find yourself in the cosy “About Me” corner of my digital space. Take a moment to look 👀 around—you’ll notice a sleek desk setup glowing with code and creativity. This is where I bring ideas to life, build cool projects, and constantly learn new things. With a cup of chai ☕ by my side and lo-fi beats in the background, this is my favourite spot to code, create, and Hustle!</p>
+            <h3 class="section-heading">About Me?</h3>
+            <p class="section-text">Hi there 👋 I'm Omkar Nawale, a Web Developer. I'm passionate about technology, problem-solving, and creative work—always exploring ways to build meaningful and impactful solutions. I love collaborating with like-minded individuals and pushing the boundaries of what we can create together. Let’s innovate, learn, and grow ✌️</p>
+            <h3 class="section-heading">What Drives Me?</h3>
+            <p class="section-text">A potent blend of coffee-fueled creativity and a soft spot for the enigmatic charm of cats 🐾. Whether I'm diving into code or brainstorming the next big idea, you'll usually find me with a cup of coffee ☕ in hand, fully in the zone. Fueled by caffeine and curiosity, I'm on a mission to craft <innovative> solutions that make a real difference in the world of technology.</p>
+            <div class="button-div"><button class="green-button" id="Resume" onclick="window.open('Omkar_Resume.pdf')">Resume</button></div>
+          </div>
+        </section>
+
+        <div class="second-move section-margin"></div>
+
+        <section class="second-section section right">
+          <div class="progress-wrapper progress-bar-wrapper-right">
+            <div class="progress-bar blue-background"></div>
+          </div>
+          <div class="section-intro-wrapper blue-text blue-border">
+            <h1 class="section-title blue-text blue-border">
+              <span class="section-title-text blue-text">My Work!</span>
+              <div class="section-title-decoration styleOne blue-border"></div>
+              <div class="section-title-decoration styleTwo blue-border"></div>
+              <div class="section-title-decoration styleThree blue-background blue-border"></div>
+            </h1>
+            <span class="section-number blue-text">02</span>
+          </div>
+
+          <div class="section-detail-wrapper">
+            <h3 class="section-heading">Step into my workspace</h3>
+            <p class="section-text">With unshakable dedication, I dive deep into the intricate world of code—where every challenge is an opportunity to create something smarter and cleaner. I'm a developer 👨‍💻 at the core, with the mind of a problem-solver and the soul of a designer working behind the scenes. I thrive on building back-end systems that not only work flawlessly but are crafted with intention and creativity.</p>
+            <div class="button-div">
+              <button class="green-button" id="Resume" onclick="window.open('https://github.com/Omkar072003')">Github Profile</button>
+            </div>
+            
+            <h3 class="section-heading">3D Visualization through AR Technology for Real Estate</h3>
+            <a href="" class="project-link">Awarded as Best Paper in 4ᵗʰ International Conference on Trends n Herald in Engineering Excellence and Metamorphosis-2025 25ᵗʰ & 26ᵗʰ April,2025</a>
+            <p class="section-text">
+              Augmented Reality (AR) enhances real-world environments by overlaying digital elements, transforming industries like real estate architecture. Unlike Virtual Reality (VR), which creates entirely digital spaces, AR integrates 3D models with physical surroundings, enabling architects, clients, and contractors to interact with virtual models in real-time for better collaboration and visualization. In real estate, AR enables remote property tours and immersive experiences, allowing buyers and renters to explore properties interactively. As AR advances, its adoption in real estate is expected to grow, streamlining processes, improving decision-making, and enhancing property marketing and development.
+            </p>
+            <div class="button-div">
+              <button class="green-button" id="Resume" onclick="window.open('https://www.canva.com/design/DAGqsshov7A/rU6G41oVy2kZWFvXx0N7eQ/edit?utm_content=DAGqsshov7A&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton')">Presentation</button>
+            </div>
+            <h3 class="section-heading">Hare Krishna Foundadtion Trust Website</h3>
+            <p class="section-text">
+             Contributed to the official website of Hare Krishna Foundation Trust, an organization dedicated to serving communities through healthcare and spiritual well-being. I helped bring their mission to life online by building a clean, user-friendly platform that reflects their values of service, compassion, and faith.                
+            </p>
+            <div class="button-div">
+              <button class="green-button" id="Resume" onclick="window.open('https://harekrishnafoundationtrust.com/')">Website</button>
+            </div>
+          </div>
+        </section>
+        
+        <div class="third-move section-margin"></div>
+        
+        <section class="third-section section left">
+          <div class="progress-wrapper progress-bar-wrapper-left">
+            <div class="progress-bar green-background"></div>
+          </div>
+          <div class="section-intro-wrapper green-text green-border">
+            <h1 class="section-title green-text green-border">
+              <span class="section-title-text green-text">My Skills!</span>
+              <div class="section-title-decoration styleOne green-border"></div>
+              <div class="section-title-decoration styleTwo green-border"></div>
+              <div class="section-title-decoration styleThree green-background green-border"></div>
+            </h1>
+            <span class="section-number green-text">03</span>
+          </div>
+        
+          <div class="section-detail-wrapper">
+            <h3 class="section-heading">Have You Checked the 🕔 Clock?</h3>
+            <p class="section-text">Time never stops, and neither ☯ do I. I continuously enhance my skill set to deliver innovative solutions. From tackling intricate coding challenges to crafting intuitive designs, I embrace difficulties as opportunities to excel.</p>
+            <div class="button-div"><button class="green-button" id="Resume" onclick="window.open('https://www.linkedin.com/in/omkar-nawale-747261300/')">Follow Me</button></div>
+            <h3 class="section-heading">Programming Languages</h3>
+            <p class="section-text">Python, JavaScript</p>
+            <h3 class="section-heading">Frontend Technologies</h3>
+            <p class="section-text">HTML, CSS, Figma</p>
+            <h3 class="section-heading">Design/UI/UX</h3>
+            <p class="section-text">Figma</p>
+          </div>
+        </section>
+        
+        <div class="fourth-move section-margin"></div>
+        
+
+      <section class="fourth-section section right">
+        <div class="progress-wrapper progress-bar-wrapper-right">
+          <div class="progress-bar blue-background"></div>
+        </div>
+        <div class="section-intro-wrapper blue-text blue-border">
+          <h1 class="section-title blue-text blue-border">
+            <span class="section-title-text blue-text">Contact Me!</span>
+            <div class="section-title-decoration styleOne blue-border"></div>
+            <div class="section-title-decoration styleTwo blue-border"></div>
+            <div class="section-title-decoration styleThree blue-background blue-border"></div>
+          </h1>
+          <span class="section-number blue-text">04</span>
+        </div>
+
+        <div class="section-detail-wrapper">
+          <h3 class="section-heading">Oops, Still No Mail? 📨</h3>
+          <p class="section-text">Whether it's a collaboration, an exciting project, or just a friendly hello—feel free to reach out! I'm always open to new opportunities, meaningful connections, and creative conversations 🙌</p>
+          <div class="button-div"><button class="green-button" id="Resume" onclick="window.open('mailto:venkatesan.m2022@vitstudent.ac.in')">Mail Me!</button></div>
+          <h3 class="section-heading">Let's Connect and Ignite Ideas! 💡</h3>
+          <p class="section-text">Stay updated with my latest projects, insights, and adventures in the world 🌍 of technology and design. Let’s spark the lamp of creativity, fuel the fire of innovation, and pursue our shared passion for excellence—together.</p>
+          <div class="button-div"><button class="green-button" id="Resume" onclick="window.open('https://www.linkedin.com/in/omkar-nawale-747261300/')">Let's Connect!</button></div>
+          <h3 class="section-heading">Flowers 💐 From My Side!</h3>
+          <p class="section-text">Thank you 😊 for taking the time to visit my portfolio. Your presence means a lot!</p>
+        </div>
+      </section>
+
+      <div class="fifth-move section-margin"></div>
+
+      <section class="fifth-section section left">
+        <div class="progress-wrapper progress-bar-wrapper-left">
+          <div class="progress-bar"></div>
+        </div>
+        <div class="section-intro-wrapper">
+          <h1 class="section-title">
+            <span class="section-title-text">FINALLY!</span>
+            <div class="section-title-decoration styleOne"></div>
+            <div class="section-title-decoration styleTwo"></div>
+            <div class="section-title-decoration styleThree"></div>
+          </h1>
+          <span class="section-number">05</span>
+        </div>
+
+        <div class="section-detail-wrapper">
+          <h3 class="section-heading">Stay Curious, Stay Creative 🎨</h3>
+          <p class="section-text">Keep fueling your curiosity and nurturing your creativity. The journey of learning and creating never truly ⚡ ends.</p>
+          <div class="button-div credit"><h5>© Omkar Nawale</h5></div>
+        </div>
+      </section>
+    </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
